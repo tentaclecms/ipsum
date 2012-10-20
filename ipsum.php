@@ -2,7 +2,7 @@
 class Ipsum extends Modules {
 
 	public function __init() {
-		$this->addAlias("preview", "ipsum", 1);
+		$this->add_alias("preview", "ipsum", 1);
 	}
 	
 	public function ipsum($text='') {
