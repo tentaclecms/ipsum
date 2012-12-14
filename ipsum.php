@@ -1,5 +1,5 @@
 <?php
-class Ipsum extends Modules {
+class Ipsum extends Plugins {
 
 	public function __init() {
 		$this->add_alias("preview", "ipsum", 1);
