@@ -6,7 +6,7 @@ class Ipsum extends Plugins {
 	}
 	
 	public function ipsum($text='') {
-		//return str_replace('[ipsum]', "module test", $text);
+		//return str_replace('[ipsum]', "plugin test", $text);
 		return str_replace('[ipsum]', file_get_contents('http://loripsum.net/api'), $text);
 	}
 }
