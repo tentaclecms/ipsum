@@ -8,12 +8,14 @@ author:
   name: the Chyrp Team
   url: http://chyrp.net/
 */
+
 event::on('preview', 'ipsum::get', 1);
 
 class ipsum
 {
 	static function get( $text='' )
     {
-       return str_replace('[ipsum]', file_get_contents('http://loripsum.net/api'), $text);
+        if (strpos( $text, '[ipsum]' ) )
+            return str_replace('[ipsum]', file_get_contents('http://loripsum.net/api'), $text);
     }
 }
