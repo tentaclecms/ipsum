@@ -1,4 +1,4 @@
-Tentacle CMS Ipsum
+Ipsum
 ==============
 
 Starter plugin for Tentacle CMS
